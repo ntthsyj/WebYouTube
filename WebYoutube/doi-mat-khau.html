@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Liên Hệ</title>
+	<meta name="description" content="Dịch vụ Youtube">
+	<meta name="keywword" content="Youtube, Dich vu Youtube">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+</head>	
+<body>
+	<div id="container"> <!-- nội dung bao bọc cả web. -->
+		<div id="menu"> <!-- menu sidebar -->
+			<div id="logo">
+				<a href="index.html"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;TRANG CHỦ</a>
+			</div>
+			<div id="background-menu">
+				<div id="card"> <!-- card -->
+					<div class="card-avatar">
+						<a href="index.html"><img src="Images/1.png" alt="card-avatar"></a>
+					</div>
+					<div class="card-body">
+						<h4 class="card-tittle">nhom8@yt</h4>
+						<div class="money-money">
+							<div class="total">
+								<label>$0,00</label>
+							</div>
+							<div class="rest">
+								<label>$0,00</label>
+							</div>
+						</div>
+					</div>
+				</div>  <!-- End card -->
+				<div id="sub-menu"> <!-- danh sách dịch vụ -->
+					<ul>
+						<li><a href="index.html" class="div-icon"><i class="fab fa-servicestack"></i>&nbsp;&nbsp;&nbsp;Dịch Vụ</a></li>
+						<li><a href="thong-tin-tai-khoan.html" class="div-icon"><i class="fas fa-user-alt"></i>&nbsp;&nbsp;&nbsp;Tài Khoản</a></li>
+						<li><a href="lich-su-giao-dich.html" class="div-icon"><i class="fas fa-history"></i>&nbsp;&nbsp;&nbsp;Lịch Sử Giao Dịch</a></li>
+						<li><a href="thong-bao-moi.html" class="div-icon"><i class="far fa-bell"></i>&nbsp;&nbsp;&nbsp;Thông Báo Mới</a></li>
+						<li>
+							<a href="#" class="div-icon"><i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;&nbsp;Hỗ Trợ</a>
+							<ul class="sub-hotro">
+								<li><a href="huong-dan-mua-hang.html">Hướng Dẫn Mua Hàng</a></li>
+								<li><a href="dieu-khoan.html">Điều Khoản</a></li>
+								<li><a href="lien-he.html">Liên Hệ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div> <!-- End danh sách dịch vụ -->
+			</div> <!-- End background menu -->
+		</div> <!-- End nội dung menu sidebar -->
+		<div id="content"> <!-- nội dung  -->
+			<nav id="navbar"> <!-- khối liên kết điều hướng -->
+				<div id="navbar-collapse">
+					<ul id="navbar-nav1">
+						<li><a class="nav-link" href="tel:0999999999" style="font-size: 18px;">HOTLINE:0999999999</a></li>
+						<li><a class="nav-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+						<li><a class="nav-link" href="https://telegram.com"><i class="fab fa-telegram-plane"></i></a></li>
+						<li><a class="nav-link" href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+						<li><a class="nav-link" href="mailto:admin@"><i class="far fa-envelope"></i></a></li>
+					</ul>
+					<ul id="navbar-nav2">
+						<li><a class="nav-link" href="thong-bao-moi.html"><i class="fas fa-bell"></i></a></li>
+						<li class="dropdown-li">
+							<a id="click" class="nav-link" href="#" onClick="userClick()"><i class="fas fa-user-alt"></i></i></a>
+							<div id="acc-click" class="dropdown_menu box dropdown-menu-right">
+								<a class="dropdown-item" href="doi-mat-khau.html">Đổi mật khẩu</a>
+								<a class="dropdown-item" href="#">Đăng xuất</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav><!-- End khối liên kết điều hướng -->
+			<div class ="main-content"> <!-- Tiêu đều trong phần content -->
+				<div id="row"> <!-- Row-->
+					<div class="col-md-6 box" style="margin-left: 25%;"> <!-- cot 1 -->
+						<div id="box7" class="cardbox">
+							<div class="card-header">
+								<h4 id="h4-tittle">Đổi mật khẩu</h4>
+								<p style="text-align: center;">Vui lòng điền thông tin liên hệ tới Admin.</p>
+							</div>
+							<div class="card-body">
+								<div>
+									<form id="form-change" action="doi-mat-khau.html" method="post" role="form">
+										<input type="hidden" name="_csrf" value="">
+										<div class="form-group field-changepasswordconfirmemail-email required bmd-form-group">
+											<label class="control-label bmd-label-static" for="changepasswordconfirmemail-email">Email</label>
+											<input type="text" id="change-pass" class="form-control" name="ChangePasswordConfirmEmail[email]" placeholder="Nhập địa chỉ email đã đăng ký tài khoản để nhận link đổi mật khẩu">
+											<span id="error-change-pass" class="error"></span>
+										</div>                                
+										<div class="form-group">
+											<button type="submit" class="btn btn-primary" name="change-button" onclick="changePass(); return false;">Submit</button>                          
+										</div>
+									</form>                            
+								</div>
+							</div>
+						</div>
+					</div> <!-- End cột 3 -->
+				</div><!-- End Row -->
+			</div> <!-- End nội dung -->
+			<div id="footer"> <!-- Footer -->
+				<p>Copyright &copy; 2018</p>
+			</div> <!-- End footer -->
+		</div> <!-- End main content -->
+	</div> <!-- End nội dung bao web -->
+	<script type="text/javascript" src="youtube.js"></script>
+</body>
+</html>

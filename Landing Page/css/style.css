@@ -1,0 +1,212 @@
+/*==Reset CSS==*/
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+/*==Style cơ bản cho website==*/
+body {
+  font-family: sans-serif,Helvetica Neue, Helvetica, Arial;
+  color: #333;
+}
+/*==Style cho menu===*/
+
+#menu ul {
+  background:#0080FF;
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 70px;
+}
+
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: 50px;
+}
+
+#menu img{
+  display: inline-block;
+  width: 120px;
+  height: 70px;
+  line-height: 70px;
+}
+
+
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: all 0.5s;
+  -moz-transition: all 0.5;
+  -webkit-transition: all 0.5;
+}
+#menu a:hover {
+  color: #0040FF;
+}
+
+.img-fluid {
+  width: 250px;
+  height: auto;
+  margin-top: 15px;
+}
+.text-center h3{
+	color: #0404B4;
+}
+
+.row{
+	overflow: hidden;
+	margin: 1.5em auto;
+}
+.row .col{
+	float: left;
+	width: 31.4%;
+	margin-right: 2em;
+	float:right;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-family:Calibri Light, Montserrat, sans-serif;
+}
+.row .col img{
+	float: top;
+	width: 100px;
+	height: auto;
+}
+.row div h5{
+	font-family: arial, Calibri Light,Montserrat, sans-serif;
+	color: #0080FF;
+}
+
+.size-image{
+  height: 450px;
+}
+.bg-img{
+  background-image:url("img/bgsp-01.jpg");
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: left; 
+  position: relative;;
+}
+.dt-gioithieu {
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    max-width: 550px;
+}
+
+.dt-gioithieu p{
+    font-style: italic;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: 30px;
+}
+
+.dt-gioithieu h1{
+  color: #0174DF;
+}
+.cl1 {
+    font-size: 25px;
+    color: #dc0000;
+    border-bottom: 1px solid;
+    font-family: arial;
+}
+
+.dt-gioithieu img{
+  width: 40px;
+  height: 40px;
+}
+.hotline{
+  font-size: 15px;
+  color: #0174DF;
+  font-family: arial;
+}
+.sdt{
+  font-size: 15px;
+  color: #dc0000;
+  font-family: arial;
+}
+.bgw{
+  background-color: white;
+  color:black;
+}
+.icon-item{
+  text-align: center;
+  font-size: 35px;
+  color:white;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  background: white;
+  margin-bottom: 30px;
+}
+
+.bg-music {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    border-top: 5px solid #fdeec1;
+    background-color: #E6E6E6;
+}
+
+
+.col-md-4 {
+    width: 33.33333333%;
+}
+.col-xl-12 {
+    width: 100%;
+    float: left;
+}
+h1, h2, h3{
+  color: #0174DF;
+  margin-bottom: 10px;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 10px 0 24px;
+}
+.txt{
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.icon-item2{
+  text-align: center;
+  font-size: 35px;
+  color:white;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  background-color:  #334BFF;
+  margin-bottom: 30px;
+}
+
+h4{
+  color: #2E9AFE;  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#hdsd{
+  background-color: white;
+  text-align: center;
+}
+.card-login {
+  max-width: 25rem;
+}
+.card-login {
+  max-width: 25rem;
+}
+
+.card-register{
+  max-width: 40rem;
+}
